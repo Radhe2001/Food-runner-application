@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".activity.RegisterationActivity">
+
+    <ImageView
+        android:id="@+id/imgBackIcon"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_back"/>
+
+    <TextView
+        android:id="@+id/txtRegisterPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/register_yourself"
+        android:textSize="25sp"
+        android:layout_marginLeft="50dp"
+        android:textColor="#FFD3A3" />
+
+    <EditText
+        android:id="@+id/etNameRegister"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:inputType="text"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/txtRegisterPage"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/name"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+
+    <EditText
+        android:id="@+id/etEmailAddressRegister"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/etNameRegister"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/email_address"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="italic"/>
+
+
+    <EditText
+        android:id="@+id/etMoblieRegister"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/etEmailAddressRegister"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/mobile_number_10_digits"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="italic"/>
+
+
+    <EditText
+        android:id="@+id/etDeliveryAddressRegister"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:inputType="text"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/etMoblieRegister"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/delivery_address"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="italic"/>
+
+    <EditText
+        android:id="@+id/etPasswordRegister"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/etDeliveryAddressRegister"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/password_registration"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="italic"/>
+
+    <EditText
+        android:id="@+id/etConfirmPasswordRegister"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/etPasswordRegister"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/confirm_password"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="italic"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="@string/register_button"
+        android:textSize="24sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="italic"
+        android:background="#FC2947"/>
+
+
+</RelativeLayout>
